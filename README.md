@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here]([https://your-solution-url.com](https://github.com/Wardinul/Huddle-landing-page-with-a-single-introductory-section))
 - Live Site URL: [Add live site URL here]([https://your-live-site-url.com](https://wardinul.github.io/Huddle-landing-page-with-a-single-introductory-section/))
 
 ## My process
