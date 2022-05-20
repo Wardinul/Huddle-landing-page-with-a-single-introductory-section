@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: 1s;
+}
+
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta:hsl(300, 69%, 71%);
+}
+
+body{
+    background-image: url(images/bg-desktop.svg);
+    font-family: 'Poppins';
+    background-color: var(--violet);
+    padding: 3em;
+}
+
+img{
+    max-width: 100%;
+}
+
+.main-page{
+    position: relative;
+}
+
+.page-content-container{
+    display: inline-flex;
+    margin: auto;
+    height: 100%;
+    padding: 4em 0;
+    gap: 2.5em;
+}
+
+.content-image{
+    min-width: 500px;
+}
+
+.content-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    max-width: 500px;
+    max-height: 250px;
+    margin-top: 2em;
+}
+
+p{
+    margin: 1em 0;
+}
+
+.btn{
+    width: fit-content;
+    text-decoration: none;
+    background-color: white;
+    color: var(--violet);
+    padding: .5em 2em;
+    border-radius: 30px;
+    box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.673);
+    transition: .2s;
+}
+
+.btn:hover{
+    background-color: var(--soft-magenta);
+    color: white;
+}
+
+.contact-links{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.contact-links  a{
+    position: relative;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 1em;
+    padding: .4em 1em;
+}
+
+
+.contact-links > a i{
+    position: absolute;
+    top:30%;
+    right: 30%;
+    left: 30%;
+}
+
+@media screen and (max-width:1000px) {
+    .page-content-container{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .content-image{
+        width: 500px;
+        min-width: 150px;
+    }
+    .content-text{
+        text-align: center;
+    }
+    .btn{
+        margin: 1em auto;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .logo{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    h1{
+        font-size: 23px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .contact-links{
+        position: relative;
+        margin: 0 auto;
+        width: fit-content;
+    }
+}
